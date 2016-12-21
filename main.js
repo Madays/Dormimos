@@ -1,10 +1,12 @@
-function sleeping(weekday, vacations) {
-    var weekday = document.getElementById("weekday").value;
-    var vacations = document.getElementById("vacations").value;
+function sleeping(){
+    console.log("sdfdgs");
+    var dia = parseInt(document.getElementById("dia").value);
+    var vacations = parseInt(document.getElementById("vacations").value);
     
-    if (weekday=="sabado" || weekday=="domingo" || vacations=="vacations"){
-        document.getElementById("resultado").innerHTML="1"   ;
+    if (dia>=6 || vacations==1){
+        document.getElementById("resultado").innerHTML="Duerme: 1";    
     }else{
-        document.getElementById("resultado").innerHTML="0";
-    }   
+        document.getElementById("resultado").innerHTML="No Duerme: 0";
+    }
 }
+

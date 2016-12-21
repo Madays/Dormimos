@@ -13,22 +13,38 @@
     
     <body class="container">
       <div class="row">
-       <div class="col-xs-8 col-xs-offset-2">
+       <div class="col-xs-6 col-xs-offset-3">
         <h1 class="text-center text-primary">Cuando dormir</h1>
         <br>
         <div class="row">
-            <div class="col-sm-8">
-                <h4 class="text-primary text-center">Ingrese datos</h4>
-                <input type="text" id="weekday" placeholder="weekday">
-                <input type="text" id="vacations" placeholder="vacations">
+            <div class="col-xs-12">
+                <div class="form-group">
+					<label for="dia">¿Qué día es hoy?</label>
+					<select class="form-control" id="dia">
+						<option value="1">Lunes</option>
+						<option value="2">Martes</option>
+						<option value="3">Miércoles</option>
+						<option value="4">Jueves</option>
+						<option value="5">Viernes</option>
+						<option value="6">Sábado</option>
+						<option value="7">Domingo</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="vacaciones">¿Estás de vacaciones?</label>
+					<select class="form-control" id="vacations">
+						<option value="1">Si</option>
+						<option value="2">No</option>
+					</select>
+				</div>
             </div>
             
-            <div class="col-sm-4">
+            <div class="col-xs-12">
                 <br>
-                <button class="btn btn-primary" onclick="sleeping(weekday, vacations)">Retorno</button>    
+                <button class="btn btn-primary" onclick="sleeping()">Retorno</button>    
             </div>
         </div>                              
-        <div id = "resultado" class="text-center text-primary"></div>
+        <div id = "resultado" class="text-center text-primary" style="font-size:30px;"></div>
        </div>      
        </div>
       </div>
